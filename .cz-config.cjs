@@ -1,0 +1,26 @@
+module.exports = {
+  types: [
+    { value: 'feat', name: 'feat:     新增模型 / 提供商 / 功能' },
+    { value: 'fix', name: 'fix:      修正错误数据或链接' },
+    { value: 'docs', name: 'docs:     仅文档变更' },
+    { value: 'style', name: 'style:    格式调整（不影响内容）' },
+    { value: 'refactor', name: 'refactor: 重构（不改变行为）' },
+    { value: 'perf', name: 'perf:     性能优化' },
+    { value: 'test', name: 'test:     测试相关' },
+    { value: 'build', name: 'build:    构建 / 依赖变更' },
+    { value: 'ci', name: 'ci:       CI 配置变更' },
+    { value: 'chore', name: 'chore:    杂项（工具、配置）' },
+    { value: 'revert', name: 'revert:   回滚提交' },
+  ],
+  scopes: [
+    { value: 'readme', name: 'readme:  README 内容' },
+    { value: 'models', name: 'models:  模型条目' },
+    { value: 'tooling', name: 'tooling: 工程配置' },
+  ],
+  allowCustomScopes: true,
+  allowEmptyScopes: true,
+  customScopesAlign: 'bottom',
+  skipQuestions: ['body', 'breaking', 'issues'],
+  subjectLimit: 100,
+  upperCaseSubject: false,
+};

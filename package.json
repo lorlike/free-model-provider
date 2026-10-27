@@ -1,0 +1,30 @@
+{
+  "name": "free-model-provider",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Free model providers, organized by input and output modality",
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "commit": "cz",
+    "commitlint": "commitlint --from HEAD~1 --to HEAD --verbose"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "commitizen": "^4.3.2",
+    "cz-customizable": "^7.5.4",
+    "husky": "^9.1.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable",
+      "config": ".cz-config.cjs"
+    }
+  }
+}
